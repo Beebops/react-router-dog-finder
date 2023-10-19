@@ -6,7 +6,11 @@ export default function NavBar({ dogs }) {
       <ul>
         {dogs.map((dog) => (
           <li key={dog.name}>
-            <NavLink to={`/dogs/${dog.name}`} activeclassname="active">
+            <NavLink
+              to={`/dogs/${dog.name}`}
+              activeclassname="active"
+              className="nav-link"
+            >
               {dog.name}
             </NavLink>
           </li>

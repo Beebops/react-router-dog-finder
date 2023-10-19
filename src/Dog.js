@@ -8,7 +8,7 @@ export default function Dog({ dogs }) {
   if (!dog) return <div>Dog not found</div>
 
   return (
-    <div>
+    <div className="Dog">
       <h1>All About {name}</h1>
       <img src={`${process.env.PUBLIC_URL}/images/${dog.src}`} />
       <div>
